@@ -47,6 +47,18 @@
         .btn:hover {
             background: #2980b9;
         }
+        input, textarea {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            margin-bottom: 15px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+        button {
+            cursor: pointer;
+            border: none;
+        }
     </style>
 </head>
 <body>
@@ -57,20 +69,35 @@
 </header>
 
 <div class="container">
+    <!-- Etap 1: O mnie -->
     <h2>👉 O mnie</h2>
     <p>Nazywam się <b>Twoje Imię</b> i zajmuję się tworzeniem stron internetowych. Uczę się webdevu i rozwijam portfolio.</p>
 
-    <h2>👉 Co oferuję</h2>
-    <ul>
-        <li>Strony dla firm</li>
-        <li>Portfolio, wizytówki</li>
-        <li>Nowoczesny design</li>
-        <li>Strony responsywne (działają na telefonach)</li>
-    </ul>
+    <!-- Etap 2: Formularz kontaktowy -->
+    <h2>👉 Skontaktuj się ze mną</h2>
+    <form action="https://formspree.io/f/mayvlrle" method="POST">
+        <label>Imię:</label>
+        <input type="text" name="name" required>
+        <label>Email:</label>
+        <input type="email" name="email" required>
+        <label>Wiadomość:</label>
+        <textarea name="message" rows="5" required></textarea>
+        <button type="submit" class="btn">Wyślij</button>
+    </form>
 
-    <h2>👉 Kontakt</h2>
-    <p>Email: <b>tutaj wpisz swój mail</b></p>
-    <a class="btn" href="mailto:twojmail@gmail.com">Napisz do mnie</a>
+    <!-- Etap 3: Oferta / monetyzacja -->
+    <h2>👉 Moja oferta</h2>
+    <p>Oferuję profesjonalne strony internetowe dla firm i freelancerów. Skontaktuj się ze mną i zamów własną stronę!</p>
+    <a class="btn" href="mailto:twojmail@gmail.com">Zamów stronę</a>
+
+    <!-- Etap 4: Blog / portfolio -->
+    <h2>👉 Mój blog / portfolio</h2>
+    <p>Sprawdź moje najnowsze artykuły o webdevie i nowoczesnym designie:</p>
+    <ul>
+        <li><a href="#">Jak stworzyć responsywną stronę w 1 dzień</a></li>
+        <li><a href="#">5 błędów początkującego webdevera</a></li>
+        <li><a href="#">Nowoczesny design w 2025</a></li>
+    </ul>
 </div>
 
 <div class="footer">
@@ -79,3 +106,4 @@
 
 </body>
 </html>
+
